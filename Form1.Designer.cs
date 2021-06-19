@@ -33,8 +33,8 @@ namespace DoggyRace
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button5 = new System.Windows.Forms.Button();
             this.reset = new System.Windows.Forms.Button();
-            this.linalbl = new System.Windows.Forms.Label();
-            this.rocklbl = new System.Windows.Forms.Label();
+            this.Lovepreetbet = new System.Windows.Forms.Label();
+            this.Simranbet = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -42,7 +42,7 @@ namespace DoggyRace
             this.Dog3 = new System.Windows.Forms.PictureBox();
             this.Dog2 = new System.Windows.Forms.PictureBox();
             this.Dog1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.racetrack = new System.Windows.Forms.PictureBox();
             this.Race = new System.Windows.Forms.Button();
             this.dogNumberNumeric = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
@@ -53,17 +53,18 @@ namespace DoggyRace
             this.akashradio = new System.Windows.Forms.RadioButton();
             this.MinimumBetLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.thorlbl = new System.Windows.Forms.Label();
+            this.Akashbet = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.betNumeric = new System.Windows.Forms.NumericUpDown();
             this.button6 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Dog4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dog3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dog2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dog1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racetrack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dogNumberNumeric)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.betNumeric)).BeginInit();
@@ -88,25 +89,25 @@ namespace DoggyRace
             this.reset.UseVisualStyleBackColor = true;
             this.reset.Click += new System.EventHandler(this.reset_Click);
             // 
-            // linalbl
+            // Lovepreetbet
             // 
-            this.linalbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.linalbl.Location = new System.Drawing.Point(542, 77);
-            this.linalbl.Name = "linalbl";
-            this.linalbl.Size = new System.Drawing.Size(244, 20);
-            this.linalbl.TabIndex = 13;
-            this.linalbl.Text = "Lovepreet\'s Bet";
-            this.linalbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Lovepreetbet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Lovepreetbet.Location = new System.Drawing.Point(542, 77);
+            this.Lovepreetbet.Name = "Lovepreetbet";
+            this.Lovepreetbet.Size = new System.Drawing.Size(244, 20);
+            this.Lovepreetbet.TabIndex = 13;
+            this.Lovepreetbet.Text = "Lovepreet\'s Bet";
+            this.Lovepreetbet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // rocklbl
+            // Simranbet
             // 
-            this.rocklbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rocklbl.Location = new System.Drawing.Point(542, 52);
-            this.rocklbl.Name = "rocklbl";
-            this.rocklbl.Size = new System.Drawing.Size(244, 20);
-            this.rocklbl.TabIndex = 12;
-            this.rocklbl.Text = "Simran\'s Bet";
-            this.rocklbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Simranbet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Simranbet.Location = new System.Drawing.Point(542, 52);
+            this.Simranbet.Name = "Simranbet";
+            this.Simranbet.Size = new System.Drawing.Size(244, 20);
+            this.Simranbet.TabIndex = 12;
+            this.Simranbet.Text = "Simran\'s Bet";
+            this.Simranbet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button4
             // 
@@ -175,15 +176,15 @@ namespace DoggyRace
             this.Dog1.TabIndex = 17;
             this.Dog1.TabStop = false;
             // 
-            // pictureBox1
+            // racetrack
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBox1.Location = new System.Drawing.Point(105, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(630, 199);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.racetrack.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.racetrack.Location = new System.Drawing.Point(105, 17);
+            this.racetrack.Name = "racetrack";
+            this.racetrack.Size = new System.Drawing.Size(630, 199);
+            this.racetrack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.racetrack.TabIndex = 16;
+            this.racetrack.TabStop = false;
             // 
             // Race
             // 
@@ -199,7 +200,7 @@ namespace DoggyRace
             // dogNumberNumeric
             // 
             this.dogNumberNumeric.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.dogNumberNumeric.Location = new System.Drawing.Point(349, 126);
+            this.dogNumberNumeric.Location = new System.Drawing.Point(266, 125);
             this.dogNumberNumeric.Maximum = new decimal(new int[] {
             4,
             0,
@@ -211,7 +212,7 @@ namespace DoggyRace
             0,
             0});
             this.dogNumberNumeric.Name = "dogNumberNumeric";
-            this.dogNumberNumeric.Size = new System.Drawing.Size(54, 20);
+            this.dogNumberNumeric.Size = new System.Drawing.Size(54, 22);
             this.dogNumberNumeric.TabIndex = 8;
             this.dogNumberNumeric.Value = new decimal(new int[] {
             1,
@@ -230,7 +231,7 @@ namespace DoggyRace
             // 
             // betsButton
             // 
-            this.betsButton.Location = new System.Drawing.Point(92, 123);
+            this.betsButton.Location = new System.Drawing.Point(437, 125);
             this.betsButton.Name = "betsButton";
             this.betsButton.Size = new System.Drawing.Size(75, 23);
             this.betsButton.TabIndex = 5;
@@ -243,7 +244,7 @@ namespace DoggyRace
             this.NameOfBettorLabel.AutoSize = true;
             this.NameOfBettorLabel.Location = new System.Drawing.Point(7, 128);
             this.NameOfBettorLabel.Name = "NameOfBettorLabel";
-            this.NameOfBettorLabel.Size = new System.Drawing.Size(79, 13);
+            this.NameOfBettorLabel.Size = new System.Drawing.Size(97, 16);
             this.NameOfBettorLabel.TabIndex = 4;
             this.NameOfBettorLabel.Text = "Who\'s Betting?";
             // 
@@ -252,33 +253,36 @@ namespace DoggyRace
             this.lovepreetradio.AutoSize = true;
             this.lovepreetradio.Location = new System.Drawing.Point(10, 89);
             this.lovepreetradio.Name = "lovepreetradio";
-            this.lovepreetradio.Size = new System.Drawing.Size(73, 17);
+            this.lovepreetradio.Size = new System.Drawing.Size(87, 20);
             this.lovepreetradio.TabIndex = 3;
             this.lovepreetradio.TabStop = true;
             this.lovepreetradio.Text = "Lovepreet";
             this.lovepreetradio.UseVisualStyleBackColor = true;
+            this.lovepreetradio.CheckedChanged += new System.EventHandler(this.lovepreetradio_CheckedChanged);
             // 
             // simranradio
             // 
             this.simranradio.AutoSize = true;
             this.simranradio.Location = new System.Drawing.Point(10, 66);
             this.simranradio.Name = "simranradio";
-            this.simranradio.Size = new System.Drawing.Size(57, 17);
+            this.simranradio.Size = new System.Drawing.Size(68, 20);
             this.simranradio.TabIndex = 2;
             this.simranradio.TabStop = true;
             this.simranradio.Text = "Simran";
             this.simranradio.UseVisualStyleBackColor = true;
+            this.simranradio.CheckedChanged += new System.EventHandler(this.simranradio_CheckedChanged);
             // 
             // akashradio
             // 
             this.akashradio.AutoSize = true;
             this.akashradio.Location = new System.Drawing.Point(10, 43);
             this.akashradio.Name = "akashradio";
-            this.akashradio.Size = new System.Drawing.Size(55, 17);
+            this.akashradio.Size = new System.Drawing.Size(64, 20);
             this.akashradio.TabIndex = 1;
             this.akashradio.TabStop = true;
             this.akashradio.Text = "Akash";
             this.akashradio.UseVisualStyleBackColor = true;
+            this.akashradio.CheckedChanged += new System.EventHandler(this.akashradio_CheckedChanged);
             // 
             // MinimumBetLabel
             // 
@@ -293,11 +297,12 @@ namespace DoggyRace
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.reset);
-            this.groupBox1.Controls.Add(this.linalbl);
-            this.groupBox1.Controls.Add(this.rocklbl);
-            this.groupBox1.Controls.Add(this.thorlbl);
+            this.groupBox1.Controls.Add(this.Lovepreetbet);
+            this.groupBox1.Controls.Add(this.Simranbet);
+            this.groupBox1.Controls.Add(this.Akashbet);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.Race);
             this.groupBox1.Controls.Add(this.dogNumberNumeric);
@@ -309,6 +314,8 @@ namespace DoggyRace
             this.groupBox1.Controls.Add(this.simranradio);
             this.groupBox1.Controls.Add(this.akashradio);
             this.groupBox1.Controls.Add(this.MinimumBetLabel);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.groupBox1.Location = new System.Drawing.Point(4, 272);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(792, 161);
@@ -316,46 +323,51 @@ namespace DoggyRace
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Betting ";
             // 
-            // thorlbl
+            // Akashbet
             // 
-            this.thorlbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.thorlbl.Location = new System.Drawing.Point(542, 27);
-            this.thorlbl.Name = "thorlbl";
-            this.thorlbl.Size = new System.Drawing.Size(244, 20);
-            this.thorlbl.TabIndex = 11;
-            this.thorlbl.Text = "Akash\'s Bet";
-            this.thorlbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Akashbet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Akashbet.Location = new System.Drawing.Point(542, 27);
+            this.Akashbet.Name = "Akashbet";
+            this.Akashbet.Size = new System.Drawing.Size(244, 20);
+            this.Akashbet.TabIndex = 11;
+            this.Akashbet.Text = "Akash\'s Bet";
+            this.Akashbet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(539, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.Size = new System.Drawing.Size(35, 16);
             this.label2.TabIndex = 10;
             this.label2.Text = "Bets";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(277, 130);
+            this.label3.Location = new System.Drawing.Point(263, 109);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.Size = new System.Drawing.Size(83, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = " dog number";
             // 
             // betNumeric
             // 
             this.betNumeric.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.betNumeric.Location = new System.Drawing.Point(173, 126);
+            this.betNumeric.Location = new System.Drawing.Point(110, 126);
+            this.betNumeric.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             this.betNumeric.Minimum = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             0});
             this.betNumeric.Name = "betNumeric";
-            this.betNumeric.Size = new System.Drawing.Size(54, 20);
+            this.betNumeric.Size = new System.Drawing.Size(54, 22);
             this.betNumeric.TabIndex = 6;
             this.betNumeric.Value = new decimal(new int[] {
             5,
@@ -375,12 +387,23 @@ namespace DoggyRace
             // timer1
             // 
             this.timer1.Interval = 25;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(107, 110);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(53, 16);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Amount";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -391,17 +414,18 @@ namespace DoggyRace
             this.Controls.Add(this.Dog3);
             this.Controls.Add(this.Dog2);
             this.Controls.Add(this.Dog1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.racetrack);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Dog4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dog3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dog2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dog1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racetrack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dogNumberNumeric)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -414,8 +438,8 @@ namespace DoggyRace
 
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button reset;
-        private System.Windows.Forms.Label linalbl;
-        private System.Windows.Forms.Label rocklbl;
+        private System.Windows.Forms.Label Lovepreetbet;
+        private System.Windows.Forms.Label Simranbet;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -423,7 +447,7 @@ namespace DoggyRace
         private System.Windows.Forms.PictureBox Dog3;
         private System.Windows.Forms.PictureBox Dog2;
         private System.Windows.Forms.PictureBox Dog1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox racetrack;
         private System.Windows.Forms.Button Race;
         private System.Windows.Forms.NumericUpDown dogNumberNumeric;
         private System.Windows.Forms.Button button1;
@@ -434,12 +458,13 @@ namespace DoggyRace
         private System.Windows.Forms.RadioButton akashradio;
         private System.Windows.Forms.Label MinimumBetLabel;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label thorlbl;
+        private System.Windows.Forms.Label Akashbet;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown betNumeric;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -6,37 +6,45 @@ using System.Threading.Tasks;
 
 namespace DoggyRace
 {
+    // this coding is for bet class
     public class Bet
     {
-        public int Amount; // betting amount
-        public int Dog;
-        public Guy Bettor;
+        public int Amount;
+        public int DogNum;
+        public Racer Bettor;
 
-        public Bet(int Amount, int Dog, Guy which)
+        public Bet(int Amount, int DogNum, Racer Bettor)
         {
             this.Amount = Amount;
-            this.Dog = Dog;
-            Bettor = which;
+            this.DogNum = DogNum;
+            this.Bettor = Bettor;
         }
-
-        public string GetDescription() // messgae box 
+        // this coding is for description
+        public string GetDescription()
         {
-            return "";
-        }
+            string description = "";
 
-        public int PayOut(int Winner)
-        {
-            if (Dog == Winner)
+            if (Amount > 0)
             {
-                return 2 * Amount;
+                description = String.Format("{0} bets {1} on Dog #{2}",
+                    Bettor.Name, Amount, DogNum);
             }
             else
             {
-                return -Amount;
+                description = String.Format("{0} hasn't placed any bets",
+                    Bettor.Name);
             }
+            return description;
         }
+        //this coding is for winner class
 
-
-
+        public int Pay(int Winner)
+        {
+            if (DogNum == Winner)
+            {
+                return Amount;
+            }
+            return -Amount;
+        }
     }
 }
